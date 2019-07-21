@@ -1,0 +1,37 @@
+.btn {
+    color: $color-white;
+    border: none;
+    border-radius: $grid-base * .4;
+    display: inline-block;
+    font-size: $font-base * 2.2;
+    font-weight: bold;
+    padding: $grid-base * 1.5;
+    text-align: center;
+    width: $grid-base * 20;
+    text-decoration: none;
+    transition-duration: .5s;
+    
+    &--red {
+        background-color: $color-red;
+        &:hover {
+            background-color: darken($color-red, 10%);
+        }
+    }
+
+    &--circle {
+        border-radius: 50%;
+        width: $grid-base * 10;
+        height: $grid-base * 10;
+        line-height: $grid-base * 10;
+        padding: 0;
+    }
+
+    &--outline {
+        background-color: transparent;
+        border: 1px solid $color-white;
+        font-family: 'Italianno', cursive;
+        &:hover {
+            background-color: rgba(255, 255, 255, .2);
+        }
+    }
+}

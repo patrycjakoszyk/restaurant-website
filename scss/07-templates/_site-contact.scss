@@ -1,0 +1,23 @@
+.site-contact {
+    background: url(../assets/img/contact.jpeg) center/cover no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    min-height: 90vh;
+    color: $color-white;
+
+    &__blackout {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+    // tylko wyrywamy h2 zeby tło weszło pod niego
+    &__h2 {
+        position: absolute;
+    }
+    &__form {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

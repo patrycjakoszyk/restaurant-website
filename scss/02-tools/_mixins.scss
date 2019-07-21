@@ -1,0 +1,26 @@
+@mixin medium {
+    @media all and (min-width: #{$bp-md}) {
+        @content;
+    }
+}
+@mixin large {
+    @media all and (min-width: #{$bp-lg}) {
+        // wrzucenie pod content danej mixiny przy wywoływanej funkcji
+        @content;
+    }
+}
+
+// h1 {
+//     font-size: 2 * $font-base;
+//     color: red;
+//     @include medium() {
+//         font-size: 4 * $font-base;
+//         color: green;
+//     }
+//     @include large() {
+//         font-size: 6 * $font-base;
+//         color: gold;
+//     }
+// }
+
+// KOD DZIAŁA ALE TO TYLKO PRZYKŁAD DO SPRAWDZENIA CZY TO DZIAŁA, DOCELOWO POWINIEN BYC W INNYM FOLDERZE!!!!!!! NIE TUTAJ!!!!!!

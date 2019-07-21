@@ -1,0 +1,35 @@
+.site-header {
+    background: url(../assets/img/start.jpeg) center/cover no-repeat;
+    height: 100vh;
+    background-attachment: fixed;
+    position: relative;
+    // element wg specyfikacji BEM
+    &__blackout {
+        // musza byc % bo chcemy rodzica wlasciwosci miec
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+    
+    &__nav {
+        position: absolute;
+        width: 60%;
+        text-align: center;
+        margin-top: $grid-base * 3;
+    }
+
+    &__h1 {
+        position: absolute;
+        width: 100%;
+        bottom: 40%;
+        text-align: center;
+    }
+    &__button {
+        position: absolute;
+        bottom: 15%;
+        margin: 0 auto;
+        // ma pozycjonowanie absolutne wiec trzeba dac left na 0 i right na 0
+        left: 0;
+        right: 0;
+    }
+}

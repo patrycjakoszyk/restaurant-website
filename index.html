@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>SCSS</title>
+</head>
+<body>
+  <!-- id - top jest kotwicą do strzałki która do góry strone scrolluje -->
+  <header class="site-header" id="top">
+    <div class="blackout site-header__blackout"></div>
+    <nav class="site-header__nav">
+      <ul>
+        <li class="nav__item"><a href="#welcome" class="nav__link">Start</a></li>
+        <li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
+        <li class="nav__item"><a href="#localization" class="nav__link">Lokalizacja</a></li>
+        <li class="nav__item"><a href="#contact" class="nav__link">Kontakt</a></li>
+      </ul>
+    </nav>
+    <h1 class="heading--h1 site-header__h1">Restauracja Dolce Vita</h1>
+    <a href="#menu" class="btn site-header__button btn--red btn--circle">Menu</a>
+  </header>
+  <main>
+    <section class="site-section" id="welcome">
+      <h2 class="heading--h2">Witamy!</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore perferendis laboriosam impedit magni quisquam eos labore, reiciendis incidunt quod dignissimos nisi eveniet quas sequi commodi rerum architecto consectetur quaerat dicta modi sint deleniti ipsum molestias. Iure ducimus animi corporis facilis architecto, voluptatibus ab asperiores quia, magni inventore quas perspiciatis ex repellendus laboriosam dolorum, delectus deleniti maiores doloremque aliquid natus! Ratione quam ut rerum, commodi repellat asperiores expedita incidunt itaque nobis. Voluptatibus iste rerum aut nam magni modi accusamus amet aspernatur eius vero. Magnam quam recusandae, perferendis quisquam qui at aliquid aspernatur accusamus ipsum enim aperiam delectus? Eum, placeat quis dolorem nisi dolor laborum, consectetur tempore tenetur, unde similique nulla dolores qui cupiditate debitis quos explicabo esse et. Perferendis ratione placeat eius iure nulla, commodi blanditiis laboriosam, consequuntur eum excepturi autem reiciendis maxime quis? Laudantium natus vitae laborum nulla similique itaque rerum vel quas provident debitis, officia reprehenderit quisquam, eveniet harum.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="site-section site-section--bg-color" id="menu">
+      <h2 class="heading--h2">Menu</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col col--md50 col--lg25">
+            <div class="image-box">
+              <div class="image-box__image"></div>
+              <div class="image-box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, culpa?</div>
+            </div>
+          </div>
+          <div class="col col--md50 col--lg25">
+            <div class="image-box">
+              <div class="image-box__image image-box__image--next"></div>
+              <div class="image-box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, culpa?</div>
+            </div>
+          </div>
+          <div class="col col--md50 col--lg25">
+            <div class="image-box">
+              <div class="image-box__image"></div>
+              <div class="image-box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, culpa?</div>
+            </div>
+          </div>
+          <div class="col col--md50 col--lg25">
+            <div class="image-box ">
+              <div class="image-box__image image-box__image--next"></div>
+              <div class="image-box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, culpa?</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="site-section" id="localization">
+      <h2 class="heading--h2">Lokalizacja</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <!-- iframe wyrywanie czyjegoś kodu do naszego, jest to API czyli fragment googla -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.068956918862!2d19.940927815677554!3d50.066270222852964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b1aa3e418c3%3A0x61caab5b1033da73!2sZacisze+8%2C+31-156+Krak%C3%B3w!5e0!3m2!1spl!2spl!4v1561888996744!5m2!1spl!2spl" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="site-contact" id="contact">
+      <div class="blackout site-contact__blackout"></div>
+      <h2 class="heading--h2 site-contact__h2">Kontakt</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <form class="form site-contact__form">
+              <!-- to co jest w for to samo dajemy do id zeby bylo odniesienie -->
+              <label for="mail" class="form__label">Podaj adres e-mail</label><br>
+              <input name="mail" id="mail" class="form__input"><br>
+              <label for="subject" class="form__label">Wpisz temat wiadomości</label><br>
+              <input name="subject" id="subject" class="form__input"><br>
+              <label for="message" class="form__label">Wpisz treść wiadomości</label><br>
+              <textarea name="message" id="message" cols="15" rows="5" class="form__input"></textarea><br>
+              <input type="submit" value="Wyślij" class="btn btn--outline">
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col col--md33"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi eveniet ex ducimus recusandae veniam laborum officiis? Iusto, facere iste id odio suscipit illo doloremque, maiores ducimus enim, rem ratione inventore!</p></div>
+        <div class="col col--md33"><p class="text-align-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi eveniet ex ducimus recusandae veniam laborum officiis? Iusto, facere iste id odio suscipit illo doloremque, maiores ducimus enim, rem ratione inventore!</p></div>
+        <div class="col col--md33"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi eveniet ex ducimus recusandae veniam laborum officiis? Iusto, facere iste id odio suscipit illo doloremque, maiores ducimus enim, rem ratione inventore!</p></div>
+      </div>
+    </div>
+  </footer>
+  <div class="to-top site-body__to-top">
+    <a href="#top" class="to-top__link">
+      <i class="material-icons">expand_less</i>
+    </a>
+  </div>
+</body>
+</html>

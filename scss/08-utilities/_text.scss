@@ -1,0 +1,17 @@
+// utilities jest czesto wykorzystywane, do zmian koloru czy textu w jednym miejscu, tez mozna zrobic _box i tam wpisywac pojedyncze zmiany
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.text-align-justify {
+    text-align: justify;
+}
+
+.text-color-white {
+    color: $color-white;
+}
